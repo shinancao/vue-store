@@ -15,10 +15,10 @@ const getters = {
 
 const mutations = {
   setStoreId (state, storeId) {
-    state = { ...state, storeId }
+    state.storeId = storeId
   },
   setStoreName (state, storeName) {
-    state = { ...state, storeName }
+    state.storeName = storeName
   }
 }
 

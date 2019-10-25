@@ -25,7 +25,7 @@ const getters = {
 // 在vue的组件中将其map到computed中
 // 指定需要使用的state即可
 computed: {
-   ...AppStore.getters(['storeId', 'storeName'])
+   ...AppStore.getters('weStore', ['storeId', 'storeName'])
 }
 
 const mutations = {
@@ -36,5 +36,5 @@ const actions = {
 // 定义外部可执行的操作
 }
 // 用dispatch来派发这些actions，如下
-AppStore.dispatch('updateAll', data)
+AppStore.dispatch('weStore/updateAll', data)
 ```
